@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GioiThieu">
+    <TextView
+        android:id="@+id/txt_diadiem"
+        style="@style/LabelStyle"
+        android:text="GioiThieu" />
+
+    <ImageView
+        android:id="@+id/img_diadiem"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:contentDescription="a"
+        android:src="@drawable/dinhdoclap" />
+</LinearLayout>

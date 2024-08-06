@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <Spinner
+        android:id="@+id/spn_songuoi"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+    <TextView
+        android:id="@+id/txt_dongia"
+        style="@style/LabelStyle"
+        android:text="Đơn giá" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_sothang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_sothang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Nhập số tháng"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <RadioGroup
+        android:id="@+id/grp_khu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rdo_khuA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Khu A" />
+        <RadioButton
+            android:id="@+id/rdo_khuB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Khu B" />
+    </RadioGroup>
+    <CheckBox
+        android:id="@+id/chk_cosudungbep"
+        style="@style/LabelStyle"
+        android:text="Có sử dụng bếp" />
+
+    <TextView
+        android:id="@+id/txt_thanhtien"
+        style="@style/LabelStyle"
+        android:text="Thành tiền" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_tinhtien"
+            style="@style/ButtonStyle"
+            android:onClick="TinhTien"
+            android:text="Tính tiền" />
+        <Button
+            android:id="@+id/btn_dong"
+            style="@style/ButtonStyle"
+            android:onClick="Dong"
+            android:text="Đóng" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".giaodien.trangcanhan.TrangCaNhanFragment">
+
+    <!-- Chỉnh sửa thông tin -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thông tin cá nhân"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_fullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:startIconDrawable="@drawable/ic_account_circle_24dp"
+        app:endIconMode="clear_text">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/TextStyle"
+            android:id="@+id/edt_fullName"
+            android:paddingLeft="10dp"
+            android:background="@color/white"
+            android:hint="Họ và tên"
+            android:textColor="#0000FF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:startIconDrawable="@drawable/ic_account_circle_24dp"
+        app:endIconMode="clear_text">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/TextStyle"
+            android:id="@+id/edt_email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:background="@color/white"
+            android:hint="Email"
+            android:enabled="false"
+            android:textColor="#0000FF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_matkhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:startIconDrawable="@drawable/ic_password_24dp"
+        app:endIconMode="password_toggle">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/TextStyle"
+            android:id="@+id/edt_matkhau"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:background="@color/white"
+            android:hint="Mật khẩu"
+            android:enabled="false"
+            android:textColor="#0000FF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Button cập nhật -->
+    <Button
+        android:id="@+id/btn_updateProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cập nhật lại thông tin"
+        android:enabled="true"
+        android:onClick="onUpdateProfileClick"
+        android:layout_marginTop="16dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginVertical="16dp" />
+    <Button
+        android:id="@+id/btn_changePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu thông tin"
+        android:enabled="false"
+        android:onClick="onChangePasswordClick" />
+    <Button
+        android:id="@+id/btn_addItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm Nội Thất"
+        android:onClick="addItems" />
+
+</LinearLayout>

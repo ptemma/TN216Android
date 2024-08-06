@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".giaodien.DangNhap_New">
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="Đăng nhập hệ thống"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_taikhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:startIconDrawable="@drawable/ic_account_circle_24dp"
+        app:endIconMode="clear_text">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/TextStyle"
+            android:id="@+id/edt_taikhoan"
+            android:background="@color/white"
+            android:hint="Tài khoản"
+            android:textColor="#0000FF"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_matkhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:startIconDrawable="@drawable/ic_password_24dp">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/TextStyle"
+            android:id="@+id/edt_matkhau"
+            android:background="@color/white"
+            android:hint="Mật khẩu"
+            android:textColor="#000000"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        style="@style/ButtonStyle"
+        android:id="@+id/btn_dangnhap"
+        android:onClick="DangNhap"
+        android:text="Đăng nhập"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

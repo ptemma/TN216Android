@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_hoten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_hoten"
+            style="@style/TextStyle"
+            android:background="@color/white"
+            android:textColor="#0000FF"
+            android:hint="Họ tên" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_capdo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_capdo"
+            style="@style/TextStyle"
+            android:background="@color/white"
+            android:textColor="#0000FF"
+            android:hint="Cấp độ"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_diem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_diem"
+            style="@style/TextStyle"
+            android:background="@color/white"
+            android:textColor="#0000FF"
+            android:hint="Điểm"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_luutt"
+        style="@style/ButtonStyle"
+        android:layout_gravity="center_horizontal"
+        android:onClick="LuuThongTin"
+        android:text="Lưu thông tin" />
+
+</LinearLayout>

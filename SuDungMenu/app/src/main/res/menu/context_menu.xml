@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mnu_chitiet"
+        android:title="Thông tin chi tiết"/>
+    <item
+        android:id="@+id/mnu_dattour"
+        android:title="Đặt Tour" />
+    <item
+        android:id="@+id/mnu_xoadd"
+        android:title="Xóa địa điểm" />
+</menu>

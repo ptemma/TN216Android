@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mnu_thich"
+        android:icon="@mipmap/love"
+        android:title="Địa điểm yêu thích"
+        app:showAsAction="ifRoom|collapseActionView"/>
+    <item
+        android:id="@+id/mnu_tintuc"
+        android:title="Tin tức">
+        <menu>
+            <item
+                android:id="@+id/mnu_khuyenmai"
+                android:title="Khuyến mãi" />
+            <item
+                android:id="@+id/mnu_camnangdl"
+                android:title="Cẩm nang du lịch" />
+        </menu>
+    </item>
+    <group android:id="@+id/grp_loaitour">
+        <item
+            android:id="@+id/mnu_tietkiem"
+            android:title="Tour tiết kiệm" />
+        <item
+            android:id="@+id/mnu_tieuchuan"
+            android:title="Tour tiêu chuẩn" />
+        <item
+            android:id="@+id/mnu_caocap"
+            android:title="Tour cao cấp" />
+    </group>
+</menu>

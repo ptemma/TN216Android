@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:title="Họ tên"
+        android:key="hoten"
+        android:icon="@mipmap/user"
+        android:defaultValue="Trần Xuân Tùng" />
+
+    <SwitchPreference
+        android:title="Tự động lưu"
+        android:key="tudongluu"
+        android:summary="Tự động lưu thông tin sử dụng"
+        android:defaultValue="true" />
+
+    <ListPreference
+        android:title="Trình duyệt mặc định"
+        android:key="trinhduyet"
+        android:entries="@array/ds_trinh_duyet"
+        android:entryValues="@array/ds_gia_tri_td"
+        android:defaultValue="0" />
+
+    <Preference
+        android:title="Web site"
+        android:summary="https://developer.android.com" >
+        <intent android:action="android.intent.action.VIEW"
+            android:data="https://developer.android.com" />
+    </Preference>
+</PreferenceScreen>

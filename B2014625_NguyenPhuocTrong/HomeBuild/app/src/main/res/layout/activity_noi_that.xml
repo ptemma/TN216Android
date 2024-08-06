@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".giaodien.trangcanhan.TrangCaNhanFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm nội thất"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/TextStyle"
+            android:id="@+id/edt_itemName"
+            android:paddingLeft="10dp"
+            android:background="@color/white"
+            android:hint="Tên nội thất"
+            android:textColor="#0000FF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/TextStyle"
+            android:id="@+id/edt_price"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:background="@color/white"
+            android:hint="Giá (USD)"
+            android:textColor="#0000FF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_hinhanh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+        <ImageView
+            android:id="@+id/img_hinhanh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:contentDescription="Hình ảnh"/> <!-- Mô tả cho hình ảnh, nếu cần -->
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btn_chooseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn ảnh"
+        android:onClick="openImagePicker" />
+    <Button
+        android:id="@+id/btn_addItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:onClick="addItem"/>
+</LinearLayout>

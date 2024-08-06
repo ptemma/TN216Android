@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spn_hangsanxuat"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_dongia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_dongia"
+            style="@style/TextStyle"
+            android:hint="Đơn giá"
+            android:enabled="false"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/grp_maytinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center"
+        >
+
+        <RadioButton
+            android:id="@+id/rdo_desktop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Desktop" />
+        <RadioButton
+            android:id="@+id/rdo_laptop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Laptop" />
+
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/chk_loa"
+            style="@style/LabelStyle"
+            android:text="loa" />
+        <CheckBox
+            android:id="@+id/chk_webcam"
+            style="@style/LabelStyle"
+            android:text="Webcam" />
+        <CheckBox
+            android:id="@+id/chk_onap"
+            style="@style/LabelStyle"
+            android:text="Ổn áp" />
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_sotien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_sotien"
+            style="@style/TextStyle"
+            android:hint="Số tiền"
+            android:enabled="false"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_tinhtien"
+            style="@style/ButtonStyle"
+            android:onClick="TinhTien"
+            android:enabled="false"
+            android:text="Tính tiền" />
+        <Button
+            android:id="@+id/btn_xacnhan"
+            style="@style/ButtonStyle"
+            android:onClick="XacNhan"
+            android:text="Xác nhận" />
+        <Button
+            android:id="@+id/btn_Dong"
+            style="@style/ButtonStyle"
+            android:onClick="Dong"
+            android:text="Đóng" />
+    </LinearLayout>
+
+</LinearLayout>

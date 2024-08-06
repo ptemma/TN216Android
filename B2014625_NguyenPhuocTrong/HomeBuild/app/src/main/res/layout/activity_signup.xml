@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/login"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="270dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELLCOME HOMEBUILD"
+            android:textColor="#672E71"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chúc ngày mới tốt lành!"
+            android:textColor="#952545"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_emailsignup"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            app:startIconDrawable="@drawable/ic_account_circle_24dp"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/TextStyle"
+                android:id="@+id/edt_emailsignup"
+                android:background="@drawable/background_transparent"
+                android:inputType="textEmailAddress"
+                android:hint="Email..."
+                android:textColor="#FFF"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_fullName"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_account_circle_24dp">
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/TextStyle"
+                android:id="@+id/edt_fullName"
+                android:background="@drawable/background_transparent"
+                android:hint="Họ và tên"
+                android:textColor="#FFF"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_passwordsignup"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            app:startIconDrawable="@drawable/ic_password_24dp"
+            app:endIconMode="password_toggle"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/TextStyle"
+                android:id="@+id/edt_passwordsignup"
+                android:inputType="textPassword"
+                android:background="@drawable/background_transparent"
+                android:hint="Mật khẩu..."
+                android:textColor="#FFF"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_checkpassword"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            app:startIconDrawable="@drawable/ic_password_24dp"
+            app:endIconMode="password_toggle"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/TextStyle"
+                android:id="@+id/edt_checkpassword"
+                android:inputType="textPassword"
+                android:background="@drawable/background_transparent"
+                android:hint="Xác nhận mật ..."
+                android:textColor="#FFF"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:textColor="@color/white"
+                android:onClick="signUp"
+                android:textStyle="bold"
+                android:text="Đăng ký"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="16dp"
+                android:id="@+id/txt_dangky"
+                android:onClick="viewDangNhap"
+                android:padding="2dp"
+                android:clickable="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Bạn đã có tài khoản! Đang nhập"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

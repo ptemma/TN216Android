@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GiaoDienCauHinh</string>
+    <string-array name="ds_trinh_duyet">
+        <item>Google Chrome</item>
+        <item>Microsoft Edge</item>
+        <item>Mozilla Firefox</item>
+        <item>Opera </item>
+    </string-array>
+    <string-array name="ds_gia_tri_td">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

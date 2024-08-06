@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cuahang"
+        android:title="Cửa hàng"
+        android:enabled="true"
+        android:icon="@drawable/ic_store"/>
+    <item
+        android:id="@+id/giohang"
+        android:title="Giỏ hàng"
+        android:enabled="true"
+        android:icon="@drawable/ic_cart"/>
+    <item
+        android:id="@+id/thongbao"
+        android:title="Thông báo"
+        android:enabled="true"
+        android:icon="@drawable/ic_bell"/>
+    <item
+        android:id="@+id/trangcanhan"
+        android:title="trang cá nhân"
+        android:enabled="true"
+        android:icon="@drawable/ic_profile"/>
+
+</menu>

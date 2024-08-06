@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".giaodien.ThongTinNhanVien">
+    <TextView
+        style="@style/TitleStyle"
+        android:text="Thông tin nhân viên"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="Tên đăng nhập: "
+                style="@style/LabelStyle"/>
+            <EditText
+                android:id="@+id/edt_taikhoan"
+                style="@style/TextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="2"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Mật khẩu: "
+                style="@style/LabelStyle"/>
+            <EditText
+                android:id="@+id/edt_matkhau"
+                style="@style/TextStyle"
+                android:inputType="textPassword"
+                android:layout_width="0dp"
+                android:layout_weight="2"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Quyền sử dụng: "
+                style="@style/LabelStyle"/>
+            <EditText
+                android:id="@+id/edt_quyensd"
+                style="@style/TextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="2"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Điện thoại: "
+                style="@style/LabelStyle"/>
+            <EditText
+                android:id="@+id/edt_dienthoai"
+                style="@style/TextStyle"
+                android:inputType="phone"
+                android:layout_width="0dp"
+                android:layout_weight="2"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/btn_chapnhan"
+        android:text="Chấp nhận"
+        android:onClick="LuuNhanVien"
+        android:layout_gravity="center"
+        style="@style/ButtonStyle"/>
+</LinearLayout>

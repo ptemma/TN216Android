@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_gioithieu"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Giới thiệu" />
+        <item
+            android:id="@+id/nav_hinhanh"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Hình ảnh" />
+        <item
+            android:id="@+id/nav_dangky"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Đăng ký" />
+        <item
+            android:id="@+id/nav_lienhe"
+            android:icon="@drawable/ic_menu_contacts"
+            android:title="Liên hệ" />
+    </group>
+</menu>

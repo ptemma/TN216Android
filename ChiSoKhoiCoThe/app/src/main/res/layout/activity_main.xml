@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_trongluong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/TextStyle"
+            android:id="@+id/edt_trongluong"
+            android:background="@color/white"
+            android:textColor="#0000FF"
+            android:inputType="numberDecimal"
+            android:hint="Trọng lượng"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_chieucao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_chieucao"
+            style="@style/TextStyle"
+            android:background="@color/white"
+            android:textColor="#0000FF"
+            android:inputType="numberDecimal"
+            android:hint="Chiều cao"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_mbi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_mbi"
+            style="@style/TextStyle"
+            android:background="@color/white"
+            android:textColor="#0000FF"
+            android:enabled="false"
+            android:hint="Giá trị MBI"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_ketluan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_ketluan"
+            style="@style/TextStyle"
+            android:background="@color/white"
+            android:textColor="#0000FF"
+            android:enabled="false"
+            android:hint="Kết luận cơ thể"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            style="@style/ButtonStyle"
+            android:id="@+id/btn_ketqua"
+            android:onClick="XacDinhKetQua"
+            android:text="kết quả"/>
+        <Button
+            style="@style/ButtonStyle"
+            android:id="@+id/btn_dong"
+            android:onClick="Dong"
+            android:text="Đóng"/>
+    </LinearLayout>
+</LinearLayout>

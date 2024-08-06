@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".giaodien.DangNhap">
+
+    <TextView
+        android:id="@+id/txt_dangnhap"
+        style="@style/TitleStyle"
+        android:text="Đăng nhập hệ thống"/>
+
+    <TextView
+        android:id="@+id/txt_taikhoan"
+        style="@style/LabelStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txt_dangnhap"
+        android:text="Tên đăng nhập: "
+        />
+    <EditText
+        android:id="@+id/edt_taikhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt_taikhoan"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/txt_taikhoan"
+        android:layout_below="@id/txt_dangnhap"/>
+
+    <TextView
+        android:id="@+id/txt_matkhau"
+        android:text="Mật khẩu"
+        style="@style/LabelStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txt_taikhoan"
+        android:textColor="#0000FF"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_matkhau"
+        android:layout_below="@id/edt_taikhoan"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@id/edt_taikhoan"
+        android:layout_toRightOf="@id/txt_matkhau"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/btn_dangnhap"
+        style="@style/ButtonStyle"
+        android:text="Đăng nhập"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edt_matkhau"
+        android:onClick="KiemTraNguoiDung"/>
+</RelativeLayout>
